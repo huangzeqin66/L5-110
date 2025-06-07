@@ -1,0 +1,437 @@
+/* 拆分自 index.html 的样式部分 */
+body { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    margin: 0; 
+    background: #f7f9fb;
+    /* 添加点状背景 */
+    background-image: radial-gradient(circle, #e3e7ed 1.2px, transparent 1.2px), radial-gradient(circle, #e3e7ed 1.2px, transparent 1.2px);
+    background-size: 18px 18px;
+    background-position: 0 0, 9px 9px;
+}
+.container { 
+    max-width: 520px; 
+    margin: 40px auto; 
+    background: #fff; 
+    border-radius: 16px; 
+    box-shadow: 0 6px 32px rgba(45,108,223,0.10), 0 1.5px 4px rgba(45,108,223,0.06);
+    border: 1.5px solid #e3e7ed;
+    background-clip: padding-box;
+    padding: 32px 28px 24px 28px; 
+}
+.navbar { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 18px;
+    border-bottom: 1.5px dotted #cfd8dc;
+    padding-bottom: 8px;
+}
+.navbar-title { 
+    font-size: 22px; 
+    color: #2d6cdf; 
+    font-weight: bold; 
+}
+.logout-btn { 
+    background: #2d6cdf; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 7px 22px; 
+    font-size: 15px; 
+    cursor: pointer; 
+    transition: background 0.2s; 
+    margin-left: auto; 
+}
+.logout-btn:hover { 
+    background: #1a4e9b; 
+}
+.tab { 
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 18px; 
+}
+.tab button { 
+    background: #e3e7ed; 
+    color: #2d6cdf; 
+    border: none; 
+    border-radius: 5px 5px 0 0; 
+    padding: 8px 32px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin: 0 2px; 
+    transition: background 0.2s;
+    border-bottom: 2.5px dotted #b0bec5;
+    box-shadow: 0 1.5px 0 #e3e7ed;
+}
+.tab button.active { 
+    background: #2d6cdf; 
+    color: #fff; 
+    border-bottom: 2.5px dotted #2d6cdf;
+    box-shadow: 0 2.5px 0 #2d6cdf;
+}
+form { 
+    margin-top: 10px; 
+    margin-bottom: 18px; 
+}
+label { 
+    display: block; 
+    margin-bottom: 12px; 
+    font-size: 15px; 
+    color: #333; 
+}
+input, select { 
+    padding: 7px 10px; 
+    border: 1px solid #cfd8dc; 
+    border-radius: 5px; 
+    font-size: 15px; 
+    margin-left: 8px; 
+    margin-top: 4px; 
+    outline: none; 
+    transition: border 0.2s;
+    border-style: dotted;
+    background: #f7f9fb;
+}
+input:focus, select:focus { 
+    border: 1.5px solid #2d6cdf; 
+    box-shadow: 0 0 0 2px #e3e7ed;
+}
+button[type="submit"] { 
+    background: #2d6cdf; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 9px 28px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin-top: 8px; 
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(45,108,223,0.08);
+    letter-spacing: 1px;
+}
+button[type="submit"]:hover { 
+    background: #1a4e9b; 
+    box-shadow: 0 4px 16px rgba(45,108,223,0.13);
+}
+.success, .error {
+    border-left: 4px dotted #2d6cdf;
+    padding-left: 10px;
+    background: #f4f7fa;
+    border-radius: 4px;
+}
+.error { 
+    color: #e53935; 
+    font-size: 15px; 
+    margin: 8px 0 0 0; 
+    min-height: 20px; 
+}
+h1 { 
+    text-align: center; 
+    color: #2d6cdf; 
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 0 #e3e7ed;
+}
+h2 { 
+    margin-top: 30px; 
+    color: #444; 
+    font-size: 20px;
+    border-left: 4px dotted #2d6cdf;
+    padding-left: 10px;
+    background: #f7f9fb;
+    border-radius: 4px;
+}
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 10px; 
+    background: #fafbfc; 
+    border-radius: 8px; 
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(45,108,223,0.06);
+}
+th, td { 
+    border: 1.5px dotted #e3e7ed; 
+    padding: 10px 6px; 
+    text-align: center; 
+    font-size: 15px; 
+}
+th { 
+    background: #e3e7ed; 
+    color: #2d6cdf;
+    letter-spacing: 1px;
+}
+tr:nth-child(even) { 
+    background: #f4f7fa; 
+}
+tr:hover td { 
+    background: #eaf2fb; 
+}
+td button { 
+    background: #e53935; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 5px 14px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: background 0.2s;
+    box-shadow: 0 1.5px 6px rgba(229,57,53,0.10);
+}
+td button:hover { 
+    background: #b71c1c; 
+}
+.danger { 
+    background: #e53935; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 8px 22px; 
+    font-size: 15px; 
+    margin-top: 18px; 
+    cursor: pointer; 
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(229,57,53,0.10);
+}
+.danger:hover { 
+    background: #b71c1c; 
+}
+.date-group { 
+    margin-bottom: 18px;
+    border-left: 4px dotted #2d6cdf;
+    padding-left: 10px;
+    background: #f7f9fb;
+    border-radius: 4px;
+}
+.date-title { 
+    font-size: 17px; 
+    color: #2d6cdf; 
+    margin: 18px 0 8px 0; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.slot-btn { 
+    background: #2d6cdf; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 6px 18px; 
+    font-size: 15px; 
+    margin: 4px 8px 4px 0; 
+    cursor: pointer; 
+    transition: background 0.2s;
+    box-shadow: 0 1.5px 6px rgba(45,108,223,0.10);
+    border-bottom: 2px dotted #fff;
+}
+.slot-btn:disabled { 
+    background: #b0bec5; 
+    color: #fff; 
+    cursor: not-allowed;
+    border-bottom: 2px dotted #b0bec5;
+}
+.slot-btn:hover:not(:disabled) { 
+    background: #1a4e9b; 
+    box-shadow: 0 4px 16px rgba(45,108,223,0.13);
+}
+.modal { 
+    background: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13); 
+    padding: 28px 24px 18px 24px; 
+    min-width: 320px; 
+    max-width: 90vw;
+    border: 2px dotted #2d6cdf;
+}
+.modal h3 { 
+    margin-top: 0; 
+    color: #2d6cdf;
+    letter-spacing: 1px;
+}
+.modal-close { 
+    position: absolute; 
+    right: 18px; 
+    top: 12px; 
+    background: none; 
+    border: none; 
+    font-size: 22px; 
+    color: #888; 
+    cursor: pointer; 
+}
+.modal-close:hover { 
+    color: #e53935; 
+}
+/* 顶部导航栏美化 */
+.top-navbar {
+    width: 100vw;
+    background: linear-gradient(90deg, #2d6cdf 60%, #4f8cff 100%);
+    padding: 0;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 16px rgba(45,108,223,0.13);
+    border-bottom: 3px dotted #fff;
+    position: relative;
+    z-index: 10;
+    animation: navbarFadeIn 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+@keyframes navbarFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px) scale(0.98);
+        box-shadow: none;
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(8px) scale(1.01);
+        box-shadow: 0 8px 32px rgba(45,108,223,0.18);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        box-shadow: 0 2px 16px rgba(45,108,223,0.13);
+    }
+}
+.top-navbar-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 18px 0 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-navbar-title {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 2.1rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-shadow: 0 2px 12px rgba(45,108,223,0.18), 0 1px 0 #4f8cff;
+    font-family: 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif;
+    flex: 1;
+    animation: titlePopIn 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+@keyframes titlePopIn {
+    0% {
+        letter-spacing: 0px;
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    60% {
+        letter-spacing: 10px;
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        letter-spacing: 5px;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@media (max-width: 600px) {
+    .top-navbar-title {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    .top-navbar-inner {
+        padding: 10px 0 8px 0;
+    }
+    #adminTable td {
+      padding-left: 2vw;
+      padding-right: 2vw;
+    }
+}
+@media (max-width: 700px) {
+  .container-wrapper {
+    flex-direction: column !important;
+    gap: 0 !important;
+    align-items: stretch !important;
+  }
+  .container {
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    padding: 10px 2vw 10px 2vw !important;
+  }
+  .top-navbar-inner {
+    padding: 10px 0 8px 0;
+  }
+  h1, .top-navbar-title {
+    font-size: 1.2rem !important;
+    letter-spacing: 2px !important;
+  }
+  th, td {
+    font-size: 13px !important;
+    padding: 7px 2px !important;
+  }
+  h2 {
+    font-size: 16px !important;
+  }
+  .modal {
+    min-width: 0 !important;
+    padding: 18px 6vw 12px 6vw !important;
+  }
+}
+/* 登录/注册表单居中美化 */
+#authView form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#authView label {
+    width: 100%;
+    max-width: 320px;
+    text-align: left;
+}
+#authView input {
+    width: 70%;
+    min-width: 120px;
+    display: inline-block;
+}
+#authView button[type="submit"] {
+    align-self: center;
+}
+#adminTable td {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: initial;
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+#adminTable .admin-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+#adminTable td button {
+  margin: 0 0 2px 0 !important;
+  min-width: 56px;
+  box-sizing: border-box;
+  max-width: 120px;
+  word-break: keep-all;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+}
+#adminTable td span {
+  display: inline-block;
+  min-width: 48px;
+  box-sizing: border-box;
+  max-width: 100%;
+  word-break: keep-all;
+}
+@media (max-width: 700px) {
+  #adminTable td {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  #adminTable td button {
+    min-width: 44px;
+    max-width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 13px;
+  }
+}
